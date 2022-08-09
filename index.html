@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/index.css">
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="sass/inicial.css">
+    <title>Facturadora</title>
+
+
+
+</head>
+<body>
+  
+    <header class="header">
+        <h1 class="header__title">FACTURA<br>DORA</h1>
+    </header>
+
+
+    <section class="calculator-container">
+        <div class="inputs-section">
+            <label for="bill" class="inputs-section__bill-label">FACTURA</label>
+            <input class="inputs-section__bill-input" id="bill"  type="number" value="100">
+            
+            <fieldset class="btns">
+                <legend class="btns__legend">Seleccionar % de Propina</legend>
+                <button class="btns__boton btns__boton--selected">5%</button>
+                <button class="btns__boton">10%</button>
+                <button class="btns__boton">15%</button>
+                <button class="btns__boton">25%</button>
+                <button class="btns__boton">50%</button>
+                <input class="btns__custom" type="number" placeholder="Custom">
+            </fieldset>
+
+            <label for="peopel" class="inputs-peopel-label">Número de Personas<span id="alert"></span></label>
+            <input class="inputs-section__peopel-input" id="peopel" min="1" type="number" value="5">
+        </div>
+
+    
+
+        <div class="result-section">
+            <div class="results">
+
+
+                <div>
+                    <p class="resuts__Tip-amount">Cantidad de Propina</p>
+                    <p class="results__Tip-person">/ Persona</p>
+                </div>
+
+                    <p class="results__Tip-value">0</p>
+
+                <div>
+                    <p class="results__total-amount">Total</p>
+                    <p class="results__total-person">/ Persona</p>  
+                </div>
+
+                    <p class="results__total-value">0</p>
+
+            </div>
+
+            <button class="result-section__reset">Resetear</button>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <footer>
+        <div class="attribution">
+            Challenge By: <a href="#" target="_blank">Juan Martin Torres</a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

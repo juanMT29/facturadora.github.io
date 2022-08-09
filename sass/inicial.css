@@ -1,0 +1,22 @@
+@import url(style.css);
+@import url(mixins.scss);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body{
+    background-color: var(--Light-grayish-cyan);
+    font-family: var(--font);
+    font-size: 24px;
+  }
+
+
+
+
+  /*---------------- desktop----------- */
+
+
